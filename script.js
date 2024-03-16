@@ -36,7 +36,45 @@ function loadData(){
     nameEl3.innerHTML = data.product3.name
     imageEl3.src=data.product3.img
 
+  
+    if(data.product4){ 
+     ///undefined is like false , falsy
+     priceEl4.innerHTML = data.product4.price
+     nameEl4.innerHTML = data.product4.name
+     imageEl4.src = data.product4.img
+    }else{
+      priceEl4.innerHTML = "Error loading :("
+     nameEl4.innerHTML = "Error loading"
+     imageEl4.src="#"
+    }
     
+
+
+
+
+///slider script
+    var currentIndex = 0;
+var contents = document.querySelectorAll('.slider-content');
+var maxIndex = contents.length - 1;
+
+function nextImage() {
+  currentIndex++;
+
+  if (currentIndex > maxIndex) {
+    currentIndex = 0;
+  }
+
+  contents.forEach(function(content) {
+    content.classList.remove('active');
+  });
+
+  contents[currentIndex].classList.add('active');
+}
+
+setInterval(nextImage, 3000);
+
+
+
 
   })
 }
