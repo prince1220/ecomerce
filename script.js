@@ -1,4 +1,5 @@
 const API_URL= "https://api.npoint.io/67616547e8742db57378"
+const LIKES_API = "https://2753ddad-3cf5-4f91-ae1b-c5eeb317eca5-00-34zff22wt9ynn.spock.replit.dev"
 ///priceEl.innerHTML="2"
 function loadData(){ 
   fetch(API_URL).then(res=>res.json()).then(data=>{
@@ -26,7 +27,7 @@ function loadData(){
 
  
     
-    priceEl2.innerHTML = data.product2.price
+    /*priceEl2.innerHTML = data.product2.price
     nameEl2.innerHTML = data.product2.name
     imageEl2.src=data.product2.img
 
@@ -47,7 +48,7 @@ function loadData(){
      nameEl4.innerHTML = "Error loading"
      imageEl4.src="#"
     }
-    
+    */
 
 
 
@@ -70,13 +71,78 @@ function nextImage() {
 
   contents[currentIndex].classList.add('active');
 }
-
-setInterval(nextImage, 3000);
-
-
-
-
+   setInterval(nextImage, 3000);
+   
   })
 }
 
-loadData()
+loadData();
+
+
+/*
+loadKey("likes",likesEl)
+loadKey("likes2",likesEl2)
+likeEl.addEventListener("click",()=>{
+  increaseKey("likes",likesEl)
+})
+dislikeEl.addEventListener("click",()=>{
+  decreaseKey("likes2",likesEl)
+})
+
+
+likeEl2.addEventListener("click",()=>{
+  increaseKey("likes2",likesEl)
+})
+dislikeEl2.addEventListener("click",()=>{
+  decreaseKey("likes2",likesEl)
+})
+
+function loadKey(key,el){
+  ///get method
+   fetch(LIKES_API+"/"+key).then(res=>res.json()).then(data=>{
+    el.innerHTML=data.msg
+   })
+}
+
+function increaseKey(key,el){
+  
+  fetch (LIKES_API+"/"+key).then(res=>res.json()).then(data=>{  ///get old likes number
+      let Num=data.msg
+  
+    fetch(LIKES_API, {   ///increase likes number
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        key:key,
+        msg:Num+1 ///previous value+1
+      }), // body data type must match "Content-Type" header
+    }).then(()=>{
+      loadKey(key,el);
+    })
+  })
+}
+
+function decreaseKey(key,el){
+  
+  fetch (LIKES_API+"/"+key).then(res=>res.json()).then(data=>{  ///get old likes number
+      let Num=data.msg
+  
+    fetch(LIKES_API, {   ///increase likes number
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        key:key,
+        msg:Num-1 ///previous value+1
+      }), // body data type must match "Content-Type" header
+    }).then(()=>{
+      loadKey(key,el);
+    })
+  })
+}
+*/

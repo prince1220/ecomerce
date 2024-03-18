@@ -6,17 +6,20 @@ box-sizing: border-box;
 text-decoration: none;
 font-family: 'Poppins', 'League Spartan';
 }
+
 .imageEl{
   border: 5px;
   border-color: #000;
-  size: 100px;
+  width: 1000px;
+  height: 1000px;
 
 }
 
 img{
   border: 5px;
   border-color: #000;
-  width: 500px;
+  width: 530px;
+  height: 680px;
 
 }
 
@@ -31,24 +34,34 @@ button{
 
 
 
-
-
-
 .slider {
   position: relative;
-  width: 100%;
-  height: 500px;
+  align-items: center;
+  width: 500px;
+  height: 800px;
   overflow: hidden;
+
 }
 
 .slider-content {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 500px;
   height: 100%;
   object-fit: cover;
-  display: none;
+  display: flex;
+  position: relative;
+  
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  max-width: 68rem;
+  height: 400px;
+  /*column-gap: 50px;*/
+  margin-left: 400px;
+  margin-top: 150px;
+  margin-bottom: 140px;
 }
 
 .slider-text {
@@ -63,4 +76,11 @@ button{
 
 .active {
   display: block;
+}
+
+.body{
+  align-items: center;
+  position: relative; 
+  display: flexbox;
+
 }
