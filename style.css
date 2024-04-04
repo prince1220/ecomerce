@@ -6,25 +6,33 @@ box-sizing: border-box;
 text-decoration: none;
 font-family: 'Poppins', 'League Spartan';
 }
+h1{
+  font-size: 45px;
 
+}
 nav{
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  height: 20px;
+  height: 100px;
   width: 100%;
   padding: 20px;
   transition: all 0.4s ease;
+  justify-content: center;
+  align-items: center;
+
 
 
  }
 
 
-.nav-content{
-  color: blue;
-  height: 40px;
-  width: 100%;
-
+nav .nav-content{
+ height: 100%;
+ max-width: 1200px;
+ margin: auto;
+ display: flex;
+ align-items: center;
+ justify-content: left;
 }
 
 .nav-content .nav-links{
@@ -44,9 +52,10 @@ nav{
   padding: 10px 4px;
   transition: all 0.3s ease;
   font-size: 16px;
+  margin-top: 20px;
  }
 
- .nav-links li a:hover{
+.nav-links li a:hover{
   color: #ffffff;
 }
 
@@ -67,12 +76,12 @@ width: 10px;
 }
 
 .prince{
-  width: 255px;
-  height: 255px;
+  width: 250px;
+  height: 250px;
   display: flex;
-  position: relative;
+  position: fixed;
   align-items: center;
-  margin-left: 720px;
+  margin-left: 450px;
   z-index: 100;
 }
 .imageEl{
@@ -86,8 +95,8 @@ width: 10px;
 img{
   border: 5px;
   border-color: #000;
-  width: 530px;
-  height: 680px;
+  width: 450px;
+  height: 580px;
   
 
 }
@@ -103,14 +112,14 @@ button{
 
 
 
-/*.slider {
+.slider {
   position: relative;
   align-items: center;
   width: 500px;
   height: 800px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
-}*/
+}
 
 .slider-content {
   position: absolute;
@@ -129,8 +138,8 @@ button{
   height: 400px;
   /*column-gap: 50px;*/
   margin-left: 600px;
-  margin-top: 195px;
-  margin-bottom: 140px;
+  margin-top: 200px;
+  margin-bottom: 110px;
 }
 
 .slider-text {
@@ -147,9 +156,34 @@ button{
   display: block;
 }
 
-.body{
-  align-items: center;
-  position: relative; 
-  display: flexbox;
+.comerce {
+  height: 300px;
+  width: 100%;
+  background: url("images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Poppins','League Spartan';
+  font-weight: 200;
+  font-size: 12px;
+  margin-bottom: 400px;
+ 
+ }
 
+ #ecomerc{
+  font-family: 'League Spartan';
+  font-size: 10px;
+  color: #605E5E;
+}
+
+ .foot{
+  width: 100%;
+  height: 50px;
+  margin-top: 1400px;
+  /*background-color: #fff;*/
+  text-align: center; 
+  color: #605E5E;
+  font-family: 'League Spartan';
+  font-size: 12px;
+  
 }
