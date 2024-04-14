@@ -27,13 +27,13 @@ function loadData(){
 
  
     
-    /*priceEl2.innerHTML = data.product2.price
+    priceEl2.innerHTML = data.product2.price
     nameEl2.innerHTML = data.product2.name
     imageEl2.src=data.product2.img
 
 
 
-    priceEl3.innerHTML = data.product3.price
+   /* priceEl3.innerHTML = data.product3.price
     nameEl3.innerHTML = data.product3.name
     imageEl3.src=data.product3.img
 

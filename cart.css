@@ -99,93 +99,11 @@ width: 10px;
   margin-left: 450px;
   z-index: 100;
 }
-.imageEl{
-  border: 5px;
-  border-color: #000;
-  width: 1000px;
-  height: 1000px;
-
-}
-
-img{
-  border: 5px;
-  border-color: #000;
-  width: 450px;
-  height: 580px;
-  
-
-}
-
-.nameEl{
-  color: blue;
-}
-
-button{
-  width: 50px;
-  margin-bottom: 50px;
-}
 
 
 
 
-.slider {
-  position: relative;
-  align-items: center;
-  width: 500px;
-  height: 800px;
-  /*overflow: hidden;*/
 
-}
-
-.slider-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 500px;
-  height: 100%;
-  object-fit: cover;
-  display: flex;
-  position: relative;
-  z-index: -100;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 68rem;
-  height: 400px;
-  /*column-gap: 50px;*/
-  margin-left: 600px;
-  margin-top: 340px;
-  margin-bottom: 110px;
-  color: #605E5E;
-}
-
-.slider-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  
-}
-
-.active {
-  display: block;
-}
-
-.comerce {
-  height: 300px;
-  width: 100%;
-  background: url("prince/background.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Anton';
-  font-weight: 200;
-  font-size: 12px;
-  margin-bottom: 400px;
- 
- }
 
  #prince{
   font-family: 'Anton';
@@ -204,3 +122,14 @@ button{
   font-size: 12px;
   
 }
+
+
+
+
+
+
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
+  }
