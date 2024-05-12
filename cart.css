@@ -7,129 +7,24 @@ text-decoration: none;
 font-family: 'Anton';
 
 }
-h1{
-  font-size: 45px;
-  font-family: "Anton";
-  color: #000;
 
-}
-nav{
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100px;
-  width: 100%;
-  padding: 20px;
-  transition: all 0.4s ease;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Anton';
-  font-weight: 100px;
   
-
- }
-
-
-nav .nav-content{
- height: 100%;
- max-width: 1200px;
- margin: auto;
- display: flex;
-
- 
+.red-border{
+  border:1px solid red;
 }
 
-.nav-content .nav-links{
-  display: flex;
-  align-items: center;
-  justify-content: left;
- 
- }
- 
- .nav-content .nav-links li{
-  list-style: none;
-  margin: 0 8px;
-  color: #605E5E;
-  justify-content: flex-end;
-  align-items: flex-end;
- }
- 
- .nav-links li a{
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 4px;
-  transition: all 0.3s ease;
-  font-size: 16px;
-  color: #605E5E;
- 
   
- }
-
-/*.nav-links li a:hover{
-  color: #ffffff;
- 
-}*/
-
-/*nav.sticky .nav-links li a{
-  color: #ffffff;
-  transition: all 0.4s ease;
-
-}*/
-
-/*nav.sticky .nav-links li a:hover{
- color: #0E2431;
-
-}*/
-
-
-
-.flexbox-logo{
-width: 10px;
-
+.green-border{
+  border:1px solid rgb(0, 255, 0);
 }
 
-
-.prince{
-  width: 250px;
-  height: 250px;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  margin-left: 450px;
-  z-index: 100;
+.orange-border{
+  border:1px solid rgb(255, 166, 0);
 }
-
-
-
-
-
-
- #prince{
-  font-family: 'Anton';
-  font-size: 12px;
-  color: #605E5E;
-}
-
- .foot{
-  width: 100%;
-  height: 50px;
-  margin-top: 1400px;
-  /*background-color: #fff;*/
-  text-align: center; 
-  color: #605E5E;
-  font-family: 'Anton';
-  font-size: 12px;
-  
-}
-
-
-
-
-
 
 @media (min-width: 1025px) {
   .h-custom {
   height: 100vh !important;
   }
   }
+

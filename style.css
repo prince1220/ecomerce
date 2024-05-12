@@ -26,6 +26,7 @@ nav{
   font-family: 'Anton';
   font-weight: 100px;
   
+  
 
  }
 
@@ -66,6 +67,27 @@ nav .nav-content{
   
  }
 
+ #policy{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  justify-content: flex-end;
+  padding-left: 600px;
+ 
+  
+ }
+
+ .policy-container{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #605E5E;
+ }
+
+ 
+
 /*.nav-links li a:hover{
   color: #ffffff;
  
@@ -91,8 +113,8 @@ width: 10px;
 
 
 .prince{
-  width: 250px;
-  height: 250px;
+  width: 265px;
+  height: 265px;
   display: flex;
   position: fixed;
   align-items: center;
