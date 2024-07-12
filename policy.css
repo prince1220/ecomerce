@@ -17,9 +17,9 @@ flex-wrap: wrap;
   margin-top: 150px;
   padding-left:320px ;
   padding-right:320px ;
- 
+  /* padding: 50px; */
   width: 100%;
-  height: 2000px;
+  height: 2500px;
   font-size: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -86,3 +86,12 @@ img{
     height: 5px !important; 
   }
   }
+
+  @media (max-width:1000px) {
+    .layout {
+      margin-top: 150px;
+      
+      padding-left:100px ;
+      padding-right:100px ;
+    }
+    }
