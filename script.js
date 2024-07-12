@@ -33,12 +33,12 @@ function loadData(){
 
 
 
-   /* priceEl3.innerHTML = data.product3.price
+    priceEl3.innerHTML = data.product3.price
     nameEl3.innerHTML = data.product3.name
     imageEl3.src=data.product3.img
 
   
-    if(data.product4){ 
+    /*if(data.product4){ 
      ///undefined is like false , falsy
      priceEl4.innerHTML = data.product4.price
      nameEl4.innerHTML = data.product4.name

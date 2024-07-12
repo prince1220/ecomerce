@@ -11,81 +11,46 @@
   </head>
   <body>
     <nav>
-    <div class="nav-content">
-      <div class="logo">
-      </div>
-      <div class="flexbox-logo">
-        <img class="prince"
-        src="logo/logo:logo.png" href="ecomerce">
-      </div>
-      <ul class="nav-links">
-        <h1><a href="https://www.index.html"></a>PRINCE</h1>
-        <li><a href="https://www.instagram.com"></a>INSTAGRAM</li>
-        <li><a href="cart.html"></a>CART</li>
-        <div id="policy-container">
-          <h1 id="policy">POLICY</h1>
+      <div class="nav-content">
+        <div class="logo">
         </div>
-      </ul>
-   
-    </div>
-  </nav>
-
+       <!-- <div class="flexbox-logo">
+          <img class="prince"
+          src="logo/logo:logo.png" href="ecomerce">
+        </div>-->
+        <ul class="nav-links">
+          <li><a href="/index.html"><h1>PRINCE</h1></a></li>
+          <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
+          <li><a href="/cart.html">CART</a></li>
+          <li> <a class="policy-link" href="/policy.html" id="policy">POLICY</a></li>
+        </ul>
+          <!-- <div  id="policy-container">
+            <a class="policy-link" href="/policy.html" id="policy">POLICY</a>
+          </div>-->
+      </div>
+    </nav>
+    
   <section class="h-100 h-custom">
     <div class="container h-100 py-5 ">
       <div class="row d-flex justify-content-center align-items-center h-100"
       style="padding-top:200px">
         <div class="col"
         >
-  
-          <div class="table-responsive" 
-           >
+           <!--Product 1-->
+          <div class="table-responsive" >
             
             <table class="table">
-              <thead>
+              <tr>
                
                   <th scope="col" class="h5">Shopping Bag</th>
                   <th scope="col">Format</th>
                   <th scope="col">Quantity</th>
                   <th scope="col">Price</th>
-               
-              </thead>
-              <tbody>
+              
+              </tr>
+          
                 <tr>
-                  <th scope="row">
-                    <div class="d-flex align-items-center">
-                      <img src="https://i.ibb.co/1mYBYX1/works-ai.png" class="img-fluid rounded-3"
-                      >
-                      <div class="flex-column ms-4">
-                        <h1 class="mb-2">A.I</h1>
-                        <p class="mb-0">A.I Pen and Ink Poster.</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="align-middle">
-                    <p class="mb-0" style="font-weight: 500;">Digital</p>
-                  </td>
-                  <td class="align-middle">
-                    <div class="d-flex flex-row">
-                      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                        <i class="fas fa-minus"></i>
-                      </button>
-  
-                      <input id="form1" min="0" name="quantity" value="2" type="number"
-                        class="form-control form-control-sm" style="width: 50px;" />
-  
-                      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                  </td>
-                  <td class="align-middle">
-                    <p class="mb-0" style="font-weight: 500;">$9.99</p>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row" class="border-bottom-0">
+                  <td >
                     <div class="d-flex align-items-center">
                       <img src="https://i.ibb.co/1mYBYX1/works-ai.png" class="img-fluid rounded-3"
                       >
@@ -94,134 +59,141 @@
                         <p class="mb-0">Jump Off The Porche Pen and ink Poster.</p>
                       </div>
                     </div>
-                  </th>
-                  <td class="align-middle border-bottom-0">
+                  </td>
+                  <td >
                     <p class="mb-0" style="font-weight: 500;">Paperback</p>
                   </td>
-                  <td class="align-middle border-bottom-0">
-                    <div class="d-flex flex-row">
-                      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                        <i class="fas fa-minus"></i>
-                      </button>
-  
-                      <input id="form1" min="0" name="quantity" value="1" type="number"
-                        class="form-control form-control-sm" style="width: 50px;" />
-  
-                      <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
+                  <td>
+                    100
                   </td>
-                  <td class="align-middle border-bottom-0">
-                    <p class="mb-0" style="font-weight: 500;">$13.50</p>
+                  <td >
+                    <p  style="font-weight: 500;">$13.50</p>
                   </td>
                 </tr>
-              </tbody>
             </table>
+            <div style="display:flex;align-items: center;justify-content: center">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="ZDX3W5WGPL4HS" />
+                <table>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="on0" value="contact information"/>
+                      contact information
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" name="os0" maxLength="200" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="on1" value="address"/>
+                      address
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" name="os1" maxLength="200" />
+                    </td>
+                  </tr>
+                </table>
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+              </form>
+              <div style="border:1px solid grey;margin:15px;padding:10px;border-radius:10px;">
+                <p>Front desk LCC</p>
+                <p>+123123</p>
+                <p>some eamail</p>
+              </div>
+
+
+
+            </div>
+
           </div>
   
-          <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px; box-sizing: border-box" >
-            
-            <div class="card-body p-4"  style="width: 1000px; height: 500px; margin-top: 100px; 
-            display: flex auto 1 1 auz; flex-direction: column; position: relative; box-sizing: border-box;"   >
-   
-              <div class="row flex-row" style="box-sizing: border-box"  >
 
-                <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0" >
-                  <form>
-                    <div class="d-flex flex-row pb-3">
-                      <div class="d-flex align-items-center pe-2">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1v"
-                          value="" aria-label="..." checked />
+            <!--Product 2-->
+            <div class="table-responsive" >
+            
+              <table class="table">
+                <tr>
+                 
+                    <th scope="col" class="h5">Shopping Bag</th>
+                    <th scope="col">Format</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                
+                </tr>
+            
+                  <tr>
+                    <td >
+                      <div class="d-flex align-items-center">
+                        <img src="https://i.ibb.co/1mYBYX1/works-ai.png" class="img-fluid rounded-3"
+                        >
+                        <div class="flex-column ms-4">
+                          <h1 class="mb-2">JUMP OFF THE PORCHE</h1>
+                          <p class="mb-0">Jump Off The Porche Pen and ink Poster.</p>
+                        </div>
                       </div>
-                      <div class="rounded border w-100 p-3">
-                        <p class="d-flex align-items-center mb-0">
-                          <i class="fab fa-cc-mastercard fa-2x text-dark pe-2"></i>Credit
-                          Card
-                        </p>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-row pb-3 ">
-                      <div class="d-flex align-items-center pe-2">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel2v"
-                          value="" aria-label="..." />
-                      </div>
-                      <div class="rounded border w-100 p-3">
-                        <p class="d-flex align-items-center mb-0">
-                          <i class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"></i>Debit Card
-                        </p>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-row">
-                      <div class="d-flex align-items-center pe-2">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel3v"
-                          value="" aria-label="..." />
-                      </div>
-                      <div class="rounded border w-100 p-3">
-                        <p class="d-flex align-items-center mb-0">
-                          <i class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"></i>PayPal
-                        </p>
-                      </div>
-                    </div>
-                  </form>
+                    </td>
+                    <td >
+                      <p class="mb-0" style="font-weight: 500;">Paperback</p>
+                    </td>
+                    <td>
+                      100
+                    </td>
+                    <td >
+                      <p  style="font-weight: 500;">$13.50</p>
+                    </td>
+                  </tr>
+              </table>
+              <div style="display:flex;align-items: center;justify-content: center">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick" />
+                  <input type="hidden" name="hosted_button_id" value="ZDX3W5WGPL4HS" />
+                  <table>
+                    <tr>
+                      <td>
+                        <input type="hidden" name="on0" value="contact information"/>
+                        contact information
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" name="os0" maxLength="200" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="hidden" name="on1" value="address"/>
+                        address
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" name="os1" maxLength="200" />
+                      </td>
+                    </tr>
+                  </table>
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                </form>
+                <div style="border:1px solid grey;margin:15px;padding:10px;border-radius:10px;">
+                  <p>Front desk LCC</p>
+                  <p>+123123</p>
+                  <p>some eamail</p>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-6">
-                  <div class="row">
-                    <div class="col-12 col-xl-6">
-                      <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
-                        <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
-                          placeholder="John Smith" />
-                        <label class="form-label" for="typeName">Name on card</label>
-                      </div>
   
-                      <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
-                        <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY"
-                          size="7" id="exp" minlength="7" maxlength="7" />
-                        <label class="form-label" for="typeExp">Expiration</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-xl-6">
-                      <div data-mdb-input-init class="form-outline mb-4 mb-xl-5">
-                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
-                          placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
-                        <label class="form-label" for="typeText">Card Number</label>
-                      </div>
   
-                      <div data-mdb-input-init class="form-outline mb-4 mb-xl-5" padding-left="10px">
-                        <input type="password" id="typeText-2" class="form-control form-control-lg-2"
-                          placeholder="&#9679;&#9679;&#9679;" size="3" minlength="3" maxlength="3" />
-                        <label class="form-label" for="typeText">Cvv</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-xl-3">
-                  <div class="d-flex justify-content-between" style="font-weight: 500;">
-                    <p class="mb-2">Subtotal</p>
-                    <p class="mb-2">$23.49</p>
-                  </div>
   
-                  <div class="d-flex justify-content-between" style="font-weight: 500;">
-                    <p class="mb-0">Shipping</p>
-                    <p class="mb-0">$2.99</p>
-                  </div>
+              </div>
   
-                  <hr class="my-4">
-  
-                  <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
-                    <p class="mb-2">Total (tax included)</p>
-                    <p class="mb-2">$26.48</p>
-                  </div>
-  
-                  <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block btn-lg">
-                    <div class="d-flex justify-content-between">
-                      <span>Checkout</span>
-                      <span>$26.48</span>
-                    </div>
-                  </button>
-  
+            </div>
+          
+                
                 </div>
               </div>
   
@@ -233,12 +205,14 @@
     </div>
   </section>
 
+
   </body>
 
-  <footer class="foot">
+  <footer class="foot"></footer>
 
-    <div id="prince">© prince.co</div>
-  
-  </footer>
+
+  <div id="prince">© prince.co</div>
+
+</footer>
 
   </html>

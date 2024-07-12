@@ -8,7 +8,10 @@ font-family: 'Anton';
 
 }
 
-  
+
+
+
+
 .red-border{
   border:1px solid red;
 }
@@ -22,11 +25,6 @@ font-family: 'Anton';
   border:1px solid rgb(255, 166, 0);
 }
 
-@media (min-width: 1025px) {
-  .h-custom {
-  height: 100vh !important;
-  }
-  }
 
   #prince{
     font-family: 'Anton';
@@ -37,7 +35,7 @@ font-family: 'Anton';
    .foot{
     width: 100%;
     height: 50px;
-    margin-top: 1400px;
+    margin-top: 1000px;
     /*background-color: #fff;*/
     text-align: center; 
     color: #605E5E;
@@ -46,3 +44,15 @@ font-family: 'Anton';
     
   }
   
+
+  @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+    @media (max-width:1000px) {
+      .prince {
+        width: 5px !important;
+        height: 5px !important; 
+      }
+      }

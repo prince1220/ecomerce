@@ -1,17 +1,35 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@900&family=Poppins:wght@100;200;700;800;900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Anton';
+flex-wrap: wrap;
+
+}
+
 
 
 .layout {
-  width: 1600px;
-  height: 1900px;
-  font-size: 34px;
+  margin: 0px;
+  margin-top: 150px;
+  padding-left:320px ;
+  padding-right:320px ;
+ 
+  width: 100%;
+  height: 2000px;
+  font-size: 30px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction:  column;
   gap: 26px;
-  align-items: center;
-  justify-content: center;
- 
+  align-items:center;
+  justify-content: flex-start;
+  
 }
+
 
 
 
@@ -24,22 +42,47 @@ h1{
   justify-content: center;
 }
 
+.imageEl3{
+  border: 5px;
+  border-color: #000;
+  width: 1000px;
+  height: 2000px;
+}
 
+img{
+  border: 5px;
+  border-color: #000;
+  width: 450px;
+  height: 580px;
+  border-width: 5px;
+  margin-top: 100px;
+  border: #605E5E;
+
+  
+
+}
 
 #prince{
   font-family: 'Anton';
   font-size: 12px;
-  color: #605E5E;
+  color: #000000;
 }
 
  .foot{
   width: 100%;
   height: 50px;
-  margin-top: 1400px;
+  /*margin-top: 1400px;
   /*background-color: #fff;*/
   text-align: center; 
-  color: #605E5E;
+  color: #605E5E !important;
   font-family: 'Anton';
   font-size: 12px;
   
 }
+
+@media (max-width:1000px) {
+  .prince {
+    width: 5px !important;
+    height: 5px !important; 
+  }
+  }
